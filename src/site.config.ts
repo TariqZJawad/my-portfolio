@@ -54,16 +54,17 @@ export const SITE: SiteConfig = {
 export const PROFILE: ProfileConfig = {
   name: SITE.title,
   tagline: "Data Analyst & Data Engineer",
-  email: "tzyad3763@gmail.com",
+  email: "tariq.z.jawad4@gmail.com",
   location: "Iraq",
   pronouns: "He/Him",
   links: {
     github: "https://github.com/TariqZJawad",
+    linkedin: "https://www.linkedin.com/in/tariq-jawad?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     website: "https://my-portfolio-six-amber-96.vercel.app",
   },
-  highlightLinks: ["github"],
+  highlightLinks: ["github", "linkedin"],
   linksPlacement: {
-    header: ["email", "github", "website"],
+    header: ["email", "github", "linkedin", "website"],
     about: false,
     footer: false,
   },
@@ -99,7 +100,7 @@ export const PUB_CONFIG: PublicationConfig = {
 
 export const FOOTER: FooterConfig = {
   credits: true,
-  sourceCode: "https://github.com/TariqZJawad/my-portfolio",
+  sourceCode: "",
   sourceContent: "",
   footerLinks: [],
 }
@@ -116,3 +117,4 @@ if (import.meta.env.DEV && typeof window === "undefined") {
   FooterConfigSchema.parse(FOOTER)
   PublicationConfigSchema.parse(PUB_CONFIG)
 }
+ 
