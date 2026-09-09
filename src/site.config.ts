@@ -59,7 +59,7 @@ export const PROFILE: ProfileConfig = {
   pronouns: "He/Him",
   links: {
     github: "https://github.com/TariqZJawad",
-    linkedin: "https://www.linkedin.com/in/tariq-jawad?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    linkedin: "https://www.linkedin.com/in/tariq-jawad",
   },
   highlightLinks: ["github", "linkedin"],
   linksPlacement: {
