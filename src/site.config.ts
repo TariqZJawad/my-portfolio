@@ -7,11 +7,11 @@ import type {
 } from "@/types"
 
 export const SITE: SiteConfig = {
-  title: "My Scholar",
+  title: "Tariq Z. Jawad",
   description:
-    "Research in computational social science, open methods, and responsible computing.",
-  href: "https://myscholar.pages.dev",
-  author: "Alex Morgan",
+    "Portfolio of a Data Analyst and Data Engineer specializing in Python, PostgreSQL, and data visualization.",
+  href: "https://my-portfolio-six-amber-96.vercel.app",
+  author: "Tariq Z. Jawad",
   dir: "ltr",
   defaultPageImage: "/img/social-preview.png",
   defaultPostImage: "/img/social-preview.png",
@@ -53,13 +53,13 @@ export const SITE: SiteConfig = {
 
 export const PROFILE: ProfileConfig = {
   name: SITE.title,
-  tagline: "Computational social scientist and open-methods",
-  email: "hi@mychiffonn.com",
-  location: "Example City",
-  pronouns: "they/them",
+  tagline: "Data Analyst & Data Engineer",
+  email: "tzyad3763@gmail.com",
+  location: "Iraq",
+  pronouns: "He/Him",
   links: {
-    github: "https://github.com/mychiffonn",
-    website: "https://mychiffonn.com/",
+    github: "https://github.com/TariqZJawad",
+    website: "https://my-portfolio-six-amber-96.vercel.app",
   },
   highlightLinks: ["github"],
   linksPlacement: {
@@ -71,8 +71,8 @@ export const PROFILE: ProfileConfig = {
 
 export const NAV_LINKS: LinkConfig[] = [
   { href: "/projects", label: "Projects" },
-  { href: "/publications", label: "Publications" },
-  { href: "/teaching", label: "Teaching" },
+  { href: "/now", label: "Now" },
+  { href: "/tech", label: "Tech" },
   { href: "/blog", label: "Blog" },
 ]
 
@@ -85,9 +85,9 @@ export const PUB_CONFIG: PublicationConfig = {
   maxFirstAuthors: 6,
   maxLastAuthors: 1,
   highlightAuthor: {
-    firstName: "Alex",
-    lastName: "Morgan",
-    aliases: ["A. Morgan"],
+    firstName: "Tariq",
+    lastName: "Jawad",
+    aliases: ["T. Jawad", "Tariq Z. Jawad"],
   },
   equalSymbols: {
     first: "*",
@@ -99,9 +99,8 @@ export const PUB_CONFIG: PublicationConfig = {
 
 export const FOOTER: FooterConfig = {
   credits: true,
-  sourceCode: "https://github.com/mychiffonn/myscholar",
-  sourceContent:
-    "https://github.com/mychiffonn/myscholar/tree/main/src/content",
+  sourceCode: "https://github.com/TariqZJawad/my-portfolio",
+  sourceContent: "",
   footerLinks: [],
 }
 
