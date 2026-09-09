@@ -99,7 +99,7 @@ export const PUB_CONFIG: PublicationConfig = {
 }
 
 export const FOOTER: FooterConfig = {
-  credits: true,
+  credits: false,
   sourceCode: "",
   sourceContent: "",
   footerLinks: [],
@@ -117,4 +117,3 @@ if (import.meta.env.DEV && typeof window === "undefined") {
   FooterConfigSchema.parse(FOOTER)
   PublicationConfigSchema.parse(PUB_CONFIG)
 }
- 
