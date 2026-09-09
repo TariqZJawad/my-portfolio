@@ -4,12 +4,14 @@ import { getCollection } from "astro:content"
 import { PROFILE, SITE } from "@site-config"
 import { PostManager } from "@/lib/blog"
 import { getLatestUpdates } from "@/lib/updates"
+import { getProjects } from "@/lib/projects"
 import Layout from "@/layouts/Layout.astro"
 import Button from "@/components/base/Button.astro"
 import PreviewCard from "@/components/blog/PreviewCard.astro"
 import Section from "@/components/layout/Section.astro"
 import Profile from "@/components/profile/Profile.astro"
 import UpdatesInline from "@/components/timeline/UpdatesInline.astro"
+import ProjectRow from "@/components/projects/ProjectRow.astro"
 
 import {
   Content as MiscContent,
@@ -33,6 +35,10 @@ const {
 const renderedUpdates =
   updateCount > 0 ? await getLatestUpdates(updateCount) : []
 
+// Projects (Replacing Publications)
+const allProjects = await getProjects()
+const selectedProjects = allProjects.slice(0, 4) // Show the 4 projects
+
 // Blog
 const postManager = PostManager.getInstance()
 const recentPosts =
@@ -51,6 +57,16 @@ const recentPostsMetadata = await Promise.all(
           renderedUpdates={renderedUpdates}
           itemClass="home-update-content"
         />
+      </Section>
+    )}
+
+  {selectedProjects.length > 0 && (
+      <Section title="Selected projects" moreLink="/projects">
+        <div class="project-list">
+          {selectedProjects.map((project) => (
+            <ProjectRow {project} />
+          ))}
+        </div>
       </Section>
     )}
 
@@ -92,6 +108,12 @@ const recentPostsMetadata = await Promise.all(
 </Layout>
 
 <style>
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xs);
+  }
+
   .latest-posts-list {
     display: flex;
     flex-direction: column;
