@@ -1,7 +1,3 @@
-I study how computational systems shape public knowledge and collective
-decision-making. My work combines **open data**, reproducible analysis, and
-human-centered evaluation.
+> "Everything starts with planning."
 
-This site is generic demonstration content for Astro Scholar. Replace the
-profile, publications, projects, and writing with your own work through the
-Markdown-first customization surfaces documented in the repository.
+I believe that solving any problem begins with breaking it down and understanding the big picture before taking a single step. As a Data Analyst and Data Engineer, I partner with you through the entire lifecycle of your project. We start by clearly diagnosing the challenge and defining the objective, then move on to developing a comprehensive action plan. From there, I handle data preparation, processing, and analysis, ultimately sharing and visualizing the results using technologies tailored to your specific needs. Together, we achieve the desired outcomes so you can make decisions with complete confidence.
