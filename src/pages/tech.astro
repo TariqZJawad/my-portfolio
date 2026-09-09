@@ -8,13 +8,12 @@ import ToolSection from "@/components/tools/ToolSection.astro"
 import { ToolTag } from "@/components/tools/tags"
 import Badge from "@/components/base/Badge.astro"
 
-// استيراد صور الشهادات
 import certGoogle from "@/assets/google_data_analytics.png"
 import certPython from "@/assets/python_for_everybody.png"
 import certPostgres from "@/assets/postgresql_for_everybody.png"
 
 const usesDescription =
-  "A collection of tools, platforms, and languages I use on a frequent basis for data analysis, engineering, and visualization."
+  "A collection of certificates, tools, platforms, and languages I use on a frequent basis for data analysis, engineering, and visualization."
 ---
 
 <CommonLayout
@@ -27,7 +26,6 @@ const usesDescription =
   <!-- 1. Certificates -->
   <Section title="Certificates" class="certificates-section">
     <div class="cert-grid">
-      <!-- Google Data Analytics -->
       <div class="cert-card">
         <div class="cert-image-wrapper">
           <Image
@@ -38,12 +36,10 @@ const usesDescription =
         </div>
         <div class="cert-tags">
           <Badge variant="outline">Data Analysis</Badge>
-          <Badge variant="outline">Spreadsheets</Badge>
           <Badge variant="outline">SQL</Badge>
         </div>
       </div>
 
-      <!-- Python for Everybody -->
       <div class="cert-card">
         <div class="cert-image-wrapper">
           <Image
@@ -55,11 +51,9 @@ const usesDescription =
         <div class="cert-tags">
           <Badge variant="outline">Python</Badge>
           <Badge variant="outline">Data Structures</Badge>
-          <Badge variant="outline">Web Scraping</Badge>
         </div>
       </div>
 
-      <!-- PostgreSQL for Everybody -->
       <div class="cert-card">
         <div class="cert-image-wrapper">
           <Image
@@ -71,18 +65,17 @@ const usesDescription =
         <div class="cert-tags">
           <Badge variant="outline">PostgreSQL</Badge>
           <Badge variant="outline">Database Design</Badge>
-          <Badge variant="outline">SQL</Badge>
         </div>
       </div>
     </div>
   </Section>
 
-  <!-- 2. Tech Stack (Transferred from Projects) -->
+  <!-- 2. Tech Stack -->
   <Section title="Tech Stack" class="tech-stack-section">
     <TechStack {...techStack} />
   </Section>
 
-  <!-- 3. Uses (Your specific tools) -->
+  <!-- 3. Workstation & Cloud Platforms -->
   <ToolSection
     title="Workstation & Cloud Platforms"
     tools={[
@@ -105,15 +98,10 @@ const usesDescription =
         href: "https://azure.microsoft.com/",
         icon: "mingcute:cloud-line",
       },
-      {
-        name: "Cloud",
-        description: "General Cloud Services",
-        href: "#",
-        icon: "mingcute:cloud-line",
-      },
     ]}
   />
 
+  <!-- 4. Languages & Development -->
   <ToolSection
     title="Languages & Development"
     tools={[
@@ -148,7 +136,8 @@ const usesDescription =
     ]}
   />
 
-    <ToolSection
+  <!-- 5. Data Engineering & Databases -->
+  <ToolSection
     title="Data Engineering & Databases"
     tools={[
       {
@@ -166,6 +155,7 @@ const usesDescription =
     ]}
   />
 
+  <!-- 6. Business Intelligence & Visualization -->
   <ToolSection
     title="Business Intelligence & Visualization"
     tools={[
@@ -198,6 +188,7 @@ const usesDescription =
     ]}
   />
 
+  <!-- 7. AI, Research & Productivity -->
   <ToolSection
     title="AI, Research & Productivity"
     tools={[
