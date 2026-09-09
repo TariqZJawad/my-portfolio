@@ -1,13 +1,22 @@
 ---
 layout: ../layouts/CommonLayout.astro
-title: Teaching
-description: Courses I have taught and supported.
+title: Tech & Tools
+description: Technologies, databases, and development environment I use.
 breadcrumbs:
-  - label: Teaching
+  - label: Tech
     icon: research
 ---
 
-## [Minerva University](https://minerva.edu/) (2021-2025)
+## Core Technologies & Stack
 
-- **PR51 Programming with Python**, Spring 2025
-- **[FA50/FA51 Formal Analyses](https://my.minerva.edu/academics/course_catalog/other/)**, Fall 2022 - Spring 2024
+- **Languages:** Python (NumPy, SciPy, Pandas, QuTiP, PyTorch)
+- **Databases & Management:** PostgreSQL, MySQL, SQLite, DBeaver
+- **Data Visualization & BI:** Apache Superset, Matplotlib, Custom Dashboards
+- **Technical Writing & Documentation:** LaTeX, Overleaf, Markdown, TeXstudio
+
+## Development Environment
+
+- **Operating System:** Ubuntu 24.04 LTS (Linux)
+- **Terminal & Shell:** GNOME, Kitty terminal emulator, Zsh
+- **AI Tools & Local Models:** GPT4All, Ollama (running models locally on Linux)
+- **Productivity & Office:** ONLYOFFICE, LibreOffice Calc
