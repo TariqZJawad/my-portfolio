@@ -1,10 +1,17 @@
 ---
+import { Image } from "astro:assets"
 import CommonLayout from "@/layouts/CommonLayout.astro"
 import Section from "@/components/layout/Section.astro"
 import TechStack from "@/components/projects/TechStack.astro"
 import techStack from "@/content/tech-stack.json"
 import ToolSection from "@/components/tools/ToolSection.astro"
 import { ToolTag } from "@/components/tools/tags"
+import Badge from "@/components/base/Badge.astro"
+
+// استيراد صور الشهادات
+import certGoogle from "@/assets/images/google_data_analytics.png"
+import certPython from "@/assets/images/Python_for_everybody.png"
+import certPostgres from "@/assets/images/postgresql_for_everybody.png"
 
 const usesDescription =
   "A collection of tools, platforms, and languages I use on a frequent basis for data analysis, engineering, and visualization."
@@ -17,169 +24,142 @@ const usesDescription =
   breadcrumbs={[{ label: "Tech", icon: "tool" }]}
   prose={false}
 >
-  <!-- 1. Tech Stack (Transferred from Projects) -->
+  <!-- 1. Certificates -->
+  <Section title="Certificates" class="certificates-section">
+    <div class="cert-grid">
+      <!-- Google Data Analytics -->
+      <div class="cert-card">
+        <div class="cert-image-wrapper">
+          <Image src={certGoogle} alt="Google Data Analytics Professional Certificate" width={400} />
+        </div>
+        <div class="cert-tags">
+          <Badge variant="outline">Data Analysis</Badge>
+          <Badge variant="outline">Spreadsheets</Badge>
+          <Badge variant="outline">SQL</Badge>
+        </div>
+      </div>
+
+      <!-- Python for Everybody -->
+      <div class="cert-card">
+        <div class="cert-image-wrapper">
+          <Image src={certPython} alt="Python for Everybody Certificate" width={400} />
+        </div>
+        <div class="cert-tags">
+          <Badge variant="outline">Python</Badge>
+          <Badge variant="outline">Data Structures</Badge>
+          <Badge variant="outline">Web Scraping</Badge>
+        </div>
+      </div>
+
+      <!-- PostgreSQL for Everybody -->
+      <div class="cert-card">
+        <div class="cert-image-wrapper">
+          <Image src={certPostgres} alt="PostgreSQL for Everybody Certificate" width={400} />
+        </div>
+        <div class="cert-tags">
+          <Badge variant="outline">PostgreSQL</Badge>
+          <Badge variant="outline">Database Design</Badge>
+          <Badge variant="outline">SQL</Badge>
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <!-- 2. Tech Stack (Transferred from Projects) -->
   <Section title="Tech Stack" class="tech-stack-section">
     <TechStack {...techStack} />
   </Section>
 
-  <!-- 2. Uses (Your specific tools) -->
+  <!-- 3. Uses (Your specific tools) -->
   <ToolSection
     title="Workstation & Cloud Platforms"
     tools={[
-      {
-        name: "Ubuntu",
-        description: "Operating System",
-        href: "https://ubuntu.com/",
-        icon: "ubuntu",
-        tags: [ToolTag.OpenSource]
-      },
-      {
-        name: "AWS",
-        description: "Cloud Computing",
-        href: "https://aws.amazon.com/",
-        icon: "mingcute:cloud-line"
-      },
-      {
-        name: "Azure",
-        description: "Cloud Platform",
-        href: "https://azure.microsoft.com/",
-        icon: "mingcute:cloud-line"
-      },
-      {
-        name: "Cloud",
-        description: "General Cloud Services",
-        href: "#",
-        icon: "mingcute:cloud-line"
-      }
+      { name: "Ubuntu", description: "Operating System", href: "https://ubuntu.com/", icon: "ubuntu", tags: [ToolTag.OpenSource] },
+      { name: "AWS", description: "Cloud Computing", href: "https://aws.amazon.com/", icon: "mingcute:cloud-line" },
+      { name: "Azure", description: "Cloud Platform", href: "https://azure.microsoft.com/", icon: "mingcute:cloud-line" },
+      { name: "Cloud", description: "General Cloud Services", href: "#", icon: "mingcute:cloud-line" }
     ]}
   />
 
   <ToolSection
     title="Languages & Development"
     tools={[
-      {
-        name: "Python",
-        description: "Programming Language",
-        href: "https://www.python.org/",
-        icon: "mingcute:code-line",
-        tags: [ToolTag.OpenSource, ToolTag.Favorite]
-      },
-      {
-        name: "R",
-        description: "Statistical Computing",
-        href: "https://www.r-project.org/",
-        icon: "mingcute:code-line",
-        tags: [ToolTag.OpenSource]
-      },
-      {
-        name: "VS Code",
-        description: "IDE",
-        href: "https://code.visualstudio.com/",
-        icon: "mingcute:computer-line",
-        tags: [ToolTag.Free, ToolTag.Favorite]
-      },
-      {
-        name: "Jupyter Notebook",
-        description: "Interactive Computing",
-        href: "https://jupyter.org/",
-        icon: "mingcute:book-line",
-        tags: [ToolTag.OpenSource]
-      }
+      { name: "Python", description: "Programming Language", href: "https://www.python.org/", icon: "mingcute:code-line", tags: [ToolTag.OpenSource, ToolTag.Favorite] },
+      { name: "R", description: "Statistical Computing", href: "https://www.r-project.org/", icon: "mingcute:code-line", tags: [ToolTag.OpenSource] },
+      { name: "VS Code", description: "IDE", href: "https://code.visualstudio.com/", icon: "mingcute:computer-line", tags: [ToolTag.Free, ToolTag.Favorite] },
+      { name: "Jupyter Notebook", description: "Interactive Computing", href: "https://jupyter.org/", icon: "mingcute:book-line", tags: [ToolTag.OpenSource] }
     ]}
   />
 
   <ToolSection
     title="Data Engineering & Databases"
     tools={[
-      {
-        name: "Databricks",
-        description: "Unified Data Analytics",
-        href: "https://databricks.com/",
-        icon: "mingcute:server-line"
-      },
-      {
-        name: "Openquery",
-        description: "Database Querying",
-        href: "#",
-        icon: "mingcute:database-2-line"
-      }
+      { name: "Databricks", description: "Unified Data Analytics", href: "https://databricks.com/", icon: "mingcute:server-line" },
+      { name: "Openquery", description: "Database Querying", href: "#", icon: "mingcute:database-2-line" }
     ]}
   />
 
   <ToolSection
     title="Business Intelligence & Visualization"
     tools={[
-      {
-        name: "Apache Superset",
-        description: "Data Exploration",
-        href: "https://superset.apache.org/",
-        icon: "mingcute:chart-pie-line",
-        tags: [ToolTag.OpenSource, ToolTag.Favorite]
-      },
-      {
-        name: "Metabase",
-        description: "Business Intelligence",
-        href: "https://www.metabase.com/",
-        icon: "mingcute:chart-bar-line",
-        tags: [ToolTag.OpenSource]
-      },
-      {
-        name: "Power BI",
-        description: "Interactive Visualization",
-        href: "https://powerbi.microsoft.com/",
-        icon: "mingcute:chart-line"
-      },
-      {
-        name: "Tableau",
-        description: "Visual Analytics",
-        href: "https://www.tableau.com/",
-        icon: "mingcute:chart-bar-line"
-      }
+      { name: "Apache Superset", description: "Data Exploration", href: "https://superset.apache.org/", icon: "mingcute:chart-pie-line", tags: [ToolTag.OpenSource, ToolTag.Favorite] },
+      { name: "Metabase", description: "Business Intelligence", href: "https://www.metabase.com/", icon: "mingcute:chart-bar-line", tags: [ToolTag.OpenSource] },
+      { name: "Power BI", description: "Interactive Visualization", href: "https://powerbi.microsoft.com/", icon: "mingcute:chart-line" },
+      { name: "Tableau", description: "Visual Analytics", href: "https://www.tableau.com/", icon: "mingcute:chart-bar-line" }
     ]}
   />
 
   <ToolSection
     title="AI, Research & Productivity"
     tools={[
-      {
-        name: "Gemini",
-        description: "AI Assistant",
-        href: "https://gemini.google.com/",
-        icon: "mingcute:ai-line"
-      },
-      {
-        name: "Kaggle",
-        description: "Data Science Community",
-        href: "https://www.kaggle.com/",
-        icon: "mingcute:group-line",
-        tags: [ToolTag.Free]
-      },
-      {
-        name: "Excel",
-        description: "Spreadsheet",
-        href: "https://www.microsoft.com/excel",
-        icon: "mingcute:file-line"
-      },
-      {
-        name: "Google Sheets",
-        description: "Online Spreadsheet",
-        href: "https://sheets.google.com/",
-        icon: "mingcute:table-line",
-        tags: [ToolTag.Free]
-      },
-      {
-        name: "Google Slides",
-        description: "Presentations",
-        href: "https://slides.google.com/",
-        icon: "mingcute:presentation-line",
-        tags: [ToolTag.Free]
-      }
+      { name: "Gemini", description: "AI Assistant", href: "https://gemini.google.com/", icon: "mingcute:ai-line" },
+      { name: "Kaggle", description: "Data Science Community", href: "https://www.kaggle.com/", icon: "mingcute:group-line", tags: [ToolTag.Free] },
+      { name: "Excel", description: "Spreadsheet", href: "https://www.microsoft.com/excel", icon: "mingcute:file-line" },
+      { name: "Google Sheets", description: "Online Spreadsheet", href: "https://sheets.google.com/", icon: "mingcute:table-line", tags: [ToolTag.Free] },
+      { name: "Google Slides", description: "Presentations", href: "https://slides.google.com/", icon: "mingcute:presentation-line", tags: [ToolTag.Free] }
     ]}
   />
 </CommonLayout>
 
 <style>
+  .certificates-section,
   .tech-stack-section {
     margin-block-end: var(--space-xl);
+  }
+
+  .cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-m);
+  }
+
+  .cert-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    padding: var(--space-s);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--background);
+  }
+
+  .cert-image-wrapper {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  .cert-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .cert-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3xs);
+    margin-block-start: auto;
   }
 </style>
