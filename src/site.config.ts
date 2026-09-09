@@ -60,11 +60,10 @@ export const PROFILE: ProfileConfig = {
   links: {
     github: "https://github.com/TariqZJawad",
     linkedin: "https://www.linkedin.com/in/tariq-jawad?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-    website: "https://my-portfolio-six-amber-96.vercel.app",
   },
   highlightLinks: ["github", "linkedin"],
   linksPlacement: {
-    header: ["email", "github", "linkedin", "website"],
+    header: ["email", "github", "linkedin"],
     about: false,
     footer: false,
   },
