@@ -1,0 +1,185 @@
+---
+import CommonLayout from "@/layouts/CommonLayout.astro"
+import Section from "@/components/layout/Section.astro"
+import TechStack from "@/components/projects/TechStack.astro"
+import techStack from "@/content/tech-stack.json"
+import ToolSection from "@/components/tools/ToolSection.astro"
+import { ToolTag } from "@/components/tools/tags"
+
+const usesDescription =
+  "A collection of tools, platforms, and languages I use on a frequent basis for data analysis, engineering, and visualization."
+---
+
+<CommonLayout
+  title="Tech & Tools"
+  description={usesDescription}
+  modifiedTime={new Date()}
+  breadcrumbs={[{ label: "Tech", icon: "tool" }]}
+  prose={false}
+>
+  <!-- 1. Tech Stack (Transferred from Projects) -->
+  <Section title="Tech Stack" class="tech-stack-section">
+    <TechStack {...techStack} />
+  </Section>
+
+  <!-- 2. Uses (Your specific tools) -->
+  <ToolSection
+    title="Workstation & Cloud Platforms"
+    tools={[
+      {
+        name: "Ubuntu",
+        description: "Operating System",
+        href: "https://ubuntu.com/",
+        icon: "ubuntu",
+        tags: [ToolTag.OpenSource]
+      },
+      {
+        name: "AWS",
+        description: "Cloud Computing",
+        href: "https://aws.amazon.com/",
+        icon: "mingcute:cloud-line"
+      },
+      {
+        name: "Azure",
+        description: "Cloud Platform",
+        href: "https://azure.microsoft.com/",
+        icon: "mingcute:cloud-line"
+      },
+      {
+        name: "Cloud",
+        description: "General Cloud Services",
+        href: "#",
+        icon: "mingcute:cloud-line"
+      }
+    ]}
+  />
+
+  <ToolSection
+    title="Languages & Development"
+    tools={[
+      {
+        name: "Python",
+        description: "Programming Language",
+        href: "https://www.python.org/",
+        icon: "mingcute:code-line",
+        tags: [ToolTag.OpenSource, ToolTag.Favorite]
+      },
+      {
+        name: "R",
+        description: "Statistical Computing",
+        href: "https://www.r-project.org/",
+        icon: "mingcute:code-line",
+        tags: [ToolTag.OpenSource]
+      },
+      {
+        name: "VS Code",
+        description: "IDE",
+        href: "https://code.visualstudio.com/",
+        icon: "mingcute:computer-line",
+        tags: [ToolTag.Free, ToolTag.Favorite]
+      },
+      {
+        name: "Jupyter Notebook",
+        description: "Interactive Computing",
+        href: "https://jupyter.org/",
+        icon: "mingcute:book-line",
+        tags: [ToolTag.OpenSource]
+      }
+    ]}
+  />
+
+  <ToolSection
+    title="Data Engineering & Databases"
+    tools={[
+      {
+        name: "Databricks",
+        description: "Unified Data Analytics",
+        href: "https://databricks.com/",
+        icon: "mingcute:server-line"
+      },
+      {
+        name: "Openquery",
+        description: "Database Querying",
+        href: "#",
+        icon: "mingcute:database-2-line"
+      }
+    ]}
+  />
+
+  <ToolSection
+    title="Business Intelligence & Visualization"
+    tools={[
+      {
+        name: "Apache Superset",
+        description: "Data Exploration",
+        href: "https://superset.apache.org/",
+        icon: "mingcute:chart-pie-line",
+        tags: [ToolTag.OpenSource, ToolTag.Favorite]
+      },
+      {
+        name: "Metabase",
+        description: "Business Intelligence",
+        href: "https://www.metabase.com/",
+        icon: "mingcute:chart-bar-line",
+        tags: [ToolTag.OpenSource]
+      },
+      {
+        name: "Power BI",
+        description: "Interactive Visualization",
+        href: "https://powerbi.microsoft.com/",
+        icon: "mingcute:chart-line"
+      },
+      {
+        name: "Tableau",
+        description: "Visual Analytics",
+        href: "https://www.tableau.com/",
+        icon: "mingcute:chart-bar-line"
+      }
+    ]}
+  />
+
+  <ToolSection
+    title="AI, Research & Productivity"
+    tools={[
+      {
+        name: "Gemini",
+        description: "AI Assistant",
+        href: "https://gemini.google.com/",
+        icon: "mingcute:ai-line"
+      },
+      {
+        name: "Kaggle",
+        description: "Data Science Community",
+        href: "https://www.kaggle.com/",
+        icon: "mingcute:group-line",
+        tags: [ToolTag.Free]
+      },
+      {
+        name: "Excel",
+        description: "Spreadsheet",
+        href: "https://www.microsoft.com/excel",
+        icon: "mingcute:file-line"
+      },
+      {
+        name: "Google Sheets",
+        description: "Online Spreadsheet",
+        href: "https://sheets.google.com/",
+        icon: "mingcute:table-line",
+        tags: [ToolTag.Free]
+      },
+      {
+        name: "Google Slides",
+        description: "Presentations",
+        href: "https://slides.google.com/",
+        icon: "mingcute:presentation-line",
+        tags: [ToolTag.Free]
+      }
+    ]}
+  />
+</CommonLayout>
+
+<style>
+  .tech-stack-section {
+    margin-block-end: var(--space-xl);
+  }
+</style>
