@@ -1,5 +1,4 @@
 ---
-import { FOOTER, PROFILE } from "@site-config"
 import { formatCount } from "@/lib/plural"
 import { getProjectSkillCounts, getProjects } from "@/lib/projects"
 import CommonLayout from "@/layouts/CommonLayout.astro"
@@ -25,70 +24,70 @@ const uniqueSkillCounts = skillCounts.filter(({ count }) => count === 1)
   <div class="projects-page">
     <div class="projects-list-wrapper">
       {skillCounts.length > 0 && (
-          <div
-            class="project-filters"
-            role="group"
-            aria-labelledby="project-skill-filter-label"
-          >
-            <span class="project-filter-label" id="project-skill-filter-label">
-              Skill
-            </span>
-            <div class="project-skill-controls">
-              <div class="chip-filter-bar">
-                {recurringSkillCounts.map(({ slug, label, count }) => (
-                  <TaxonomyChip
-                    label={label}
-                    count={count}
-                    countNoun="project"
-                    data-project-skill-filter={slug}
-                    aria-pressed="false"
-                    aria-label={`Filter projects by skill ${label}; ${formatCount(count, "project")}`}
-                  />
-                ))}
-                <span class="chip-active-filter" data-active-filter hidden>
-                  <TaxonomyChip
-                    label="Clear filter"
-                    prefix="×"
-                    tone="destructive"
-                    data-clear-project-filters
-                    aria-label="Clear project filter"
-                  />
-                </span>
-              </div>
-              {uniqueSkillCounts.length > 0 && (
-                <details class="project-skill-more" data-disclosure>
-                  <summary>
-                    <span data-skill-more-show>
-                      Show {formatCount(uniqueSkillCounts.length, "more skill")}
-                    </span>
-                    <span data-skill-more-hide>Hide additional skills</span>
-                    <span data-disclosure-chevron>
-                      <Icon name="chevron-down" />
-                    </span>
-                  </summary>
-                  <div class="chip-filter-bar project-skill-more-chips">
-                    {uniqueSkillCounts.map(({ slug, label, count }) => (
-                      <TaxonomyChip
-                        label={label}
-                        count={count}
-                        countNoun="project"
-                        data-project-skill-filter={slug}
-                        aria-pressed="false"
-                        aria-label={`Filter projects by skill ${label}; ${formatCount(count, "project")}`}
-                      />
-                    ))}
-                  </div>
-                </details>
-              )}
+        <div
+          class="project-filters"
+          role="group"
+          aria-labelledby="project-skill-filter-label"
+        >
+          <span class="project-filter-label" id="project-skill-filter-label">
+            Skill
+          </span>
+          <div class="project-skill-controls">
+            <div class="chip-filter-bar">
+              {recurringSkillCounts.map(({ slug, label, count }) => (
+                <TaxonomyChip
+                  label={label}
+                  count={count}
+                  countNoun="project"
+                  data-project-skill-filter={slug}
+                  aria-pressed="false"
+                  aria-label={`Filter projects by skill ${label}; ${formatCount(count, "project")}`}
+                />
+              ))}
+              <span class="chip-active-filter" data-active-filter hidden>
+                <TaxonomyChip
+                  label="Clear filter"
+                  prefix="×"
+                  tone="destructive"
+                  data-clear-project-filters
+                  aria-label="Clear project filter"
+                />
+              </span>
             </div>
-            <span
-              class="sr-only"
-              aria-live="polite"
-              aria-atomic="true"
-              data-project-filter-status
-            />
+            {uniqueSkillCounts.length > 0 && (
+              <details class="project-skill-more" data-disclosure>
+                <summary>
+                  <span data-skill-more-show>
+                    Show {formatCount(uniqueSkillCounts.length, "more skill")}
+                  </span>
+                  <span data-skill-more-hide>Hide additional skills</span>
+                  <span data-disclosure-chevron>
+                    <Icon name="chevron-down" />
+                  </span>
+                </summary>
+                <div class="chip-filter-bar project-skill-more-chips">
+                  {uniqueSkillCounts.map(({ slug, label, count }) => (
+                    <TaxonomyChip
+                      label={label}
+                      count={count}
+                      countNoun="project"
+                      data-project-skill-filter={slug}
+                      aria-pressed="false"
+                      aria-label={`Filter projects by skill ${label}; ${formatCount(count, "project")}`}
+                    />
+                  ))}
+                </div>
+              </details>
+            )}
           </div>
-        )}
+          <span
+            class="sr-only"
+            aria-live="polite"
+            aria-atomic="true"
+            data-project-filter-status
+          />
+        </div>
+      )}
 
       <div class="project-filter-empty" data-project-filter-empty hidden>
         <h2>No matching projects</h2>
@@ -270,7 +269,7 @@ const uniqueSkillCounts = skillCounts.filter(({ count }) => count === 1)
     }
 
     .project-skill-controls {
-        inline-size: 100%;
+      inline-size: 100%;
     }
   }
 </style>
