@@ -36,7 +36,7 @@ The analysis transitioned to Apache Superset to build an interactive dashboard t
 ### 1. Massive Pledges, Minimal Execution
 We tracked $6.22 Billion in commitments against a mere $1.23 Million in actual disbursements, highlighting a severe bottleneck before funds reach recipient countries.
 
-![Commitments vs Disbursements](./diip_contries.png)
+![Commitments vs Disbursements](./diip_contries.jpg)
 
 ### 2. Is the Money Following the Need?
 Funding is often randomly distributed, ignoring the actual GDP per capita of recipient nations, indicating allocation is driven by factors other than pure economic need.
@@ -46,16 +46,16 @@ Funding is often randomly distributed, ignoring the actual GDP per capita of rec
 ### 3. The Intermediary Absorption
 Organizations operating with astronomical administrative overhead ratios are absorbing millions into operational costs rather than executing promised projects.
 
-![Financial Efficiency](./diip_org.png)
+![Financial Efficiency](./diip_org.jpg)
 
 ### 4. Active Manipulation Tactics
 The system is actively gamed, with 61.34% of suspicious projects using "Fragmentation" (splitting funds across confusing categories) and 36.93% using "Smurfing" (breaking large funds into micro-transactions).
 
-![Suspicion Metrics](./diip_donut.png)
+![Suspicion Metrics](./diip_donut.jpg)
 
 Vague, repetitive terms like "project" and "develop" dominate project titles, obscuring specific, trackable deliverables.
 
-![Keywords Word Cloud](./diip_wordcloud.png)
+![Keywords Word Cloud](./diip_wordcloud.jpg)
 
 ### 5. Spatial Reality of Risk
 High-risk transactions cluster in specific global pockets, proving that risk is a systemic pattern concentrated in regions with compromised financial oversight.
