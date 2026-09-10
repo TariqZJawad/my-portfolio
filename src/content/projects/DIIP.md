@@ -36,12 +36,12 @@ The analysis transitioned to Apache Superset to build an interactive dashboard t
 ### 1. Massive Pledges, Minimal Execution
 We tracked $6.22 Billion in commitments against a mere $1.23 Million in actual disbursements, highlighting a severe bottleneck before funds reach recipient countries.
 
-![Commitments vs Disbursements](./diip_contries.jpg)
+![Commitments vs Disbursements](./diip_co.jpg)
 
 ### 2. Is the Money Following the Need?
 Funding is often randomly distributed, ignoring the actual GDP per capita of recipient nations, indicating allocation is driven by factors other than pure economic need.
 
-![Economic Status vs Funding](./diip_scatter.jpg)
+![Economic Status vs Funding](./diip_sc.jpg)
 
 ### 3. The Intermediary Absorption
 Organizations operating with astronomical administrative overhead ratios are absorbing millions into operational costs rather than executing promised projects.
