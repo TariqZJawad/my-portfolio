@@ -253,12 +253,16 @@ export const ToolSchema = z.object({
  * Taxonomy of project forms. Technical domains and tools belong in `skills`
  * so the project type and skill filters remain semantically independent.
  */
-export const PROJECT_TYPES = [
+
+  export const PROJECT_TYPES = [
   { slug: "research", label: "Research" },
   { slug: "product", label: "Product" },
   { slug: "tool", label: "Tool" },
   { slug: "open-source", label: "Open Source" },
   { slug: "coursework", label: "Coursework" },
+  { slug: "data-analysis", label: "Data Analysis" },
+  { slug: "case-study", label: "Case Study" },
+  { slug: "data-engineering", label: "Data Engineering" },
 ] as const
 
 export type ProjectTypeSlug = (typeof PROJECT_TYPES)[number]["slug"]
