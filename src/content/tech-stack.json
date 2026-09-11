@@ -2,12 +2,18 @@
   "description": "Languages, frameworks, and infrastructure from my work.",
   "groups": [
     {
-      "title": "Languages",
+      "name": "Languages",
       "icon": "mingcute:code-line",
-      "items": ["Python", "SQL", "R", "LaTeX", "Markdown"]
+      "items": [
+        "Python",
+        "SQL",
+        "R",
+        "LaTeX",
+        "Markdown"
+      ]
     },
     {
-      "title": "Data Engineering & Databases",
+      "name": "Data Engineering & Databases",
       "icon": "mingcute:server-line",
       "items": [
         "PostgreSQL",
@@ -19,7 +25,7 @@
       ]
     },
     {
-      "title": "Data Analysis & Processing",
+      "name": "Data Analysis & Processing",
       "icon": "mingcute:filter-line",
       "items": [
         "Pandas",
@@ -30,7 +36,7 @@
       ]
     },
     {
-      "title": "Data Visualization & BI",
+      "name": "Data Visualization & BI",
       "icon": "mingcute:chart-bar-line",
       "items": [
         "Power BI",
@@ -42,7 +48,7 @@
       ]
     },
     {
-      "title": "AI & Tools",
+      "name": "AI & Tools",
       "icon": "mingcute:brain-line",
       "items": [
         "Prompt Engineering",
