@@ -3,27 +3,59 @@
     {
       "title": "Languages",
       "icon": "mingcute:code-line",
-      "items": ["Python", "SQL", "R", "LaTeX", "Markdown"]
+      "items": [
+        "Python",
+        "SQL",
+        "R",
+        "LaTeX",
+        "Markdown"
+      ]
     },
     {
       "title": "Data Engineering & Databases",
       "icon": "mingcute:server-line",
-      "items": ["PostgreSQL", "MySQL", "SQLite", "ETL Pipelines", "Web Scraping", "REST APIs"]
+      "items": [
+        "PostgreSQL",
+        "MySQL",
+        "SQLite",
+        "ETL Pipelines",
+        "Web Scraping",
+        "REST APIs"
+      ]
     },
     {
       "title": "Data Analysis & Processing",
       "icon": "mingcute:filter-line",
-      "items": ["Pandas", "NumPy", "SciPy", "Data Cleaning", "Geospatial Analysis"]
+      "items": [
+        "Pandas",
+        "NumPy",
+        "SciPy",
+        "Data Cleaning",
+        "Geospatial Analysis"
+      ]
     },
     {
       "title": "Data Visualization & BI",
       "icon": "mingcute:chart-bar-line",
-      "items": ["Power BI", "Tableau", "Apache Superset", "Metabase", "Streamlit", "Plotly"]
+      "items": [
+        "Power BI",
+        "Tableau",
+        "Apache Superset",
+        "Metabase",
+        "Streamlit",
+        "Plotly"
+      ]
     },
     {
       "title": "AI & Tools",
       "icon": "mingcute:brain-line",
-      "items": ["Prompt Engineering", "AI Project Management", "Git", "Ubuntu", "DBeaver"]
+      "items": [
+        "Prompt Engineering",
+        "AI Project Management",
+        "Git",
+        "Ubuntu",
+        "DBeaver"
+      ]
     }
   ]
 }
