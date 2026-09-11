@@ -1,5 +1,9 @@
+
 import academiconsIcons from "@iconify-json/academicons/icons.json"
 import mingcuteIcons from "@iconify-json/mingcute/icons.json"
+import logosIcons from "@iconify-json/logos/icons.json"
+import deviconIcons from "@iconify-json/devicon/icons.json"
+import vscodeIconsIcons from "@iconify-json/vscode-icons/icons.json"
 import { getIconData, iconToSVG, replaceIDs } from "@iconify/utils"
 
 import { SEMANTIC_ICONS } from "@icon-config"
@@ -12,6 +16,9 @@ export interface ResolvedIcon {
 const iconSets = {
   academicons: academiconsIcons,
   mingcute: mingcuteIcons,
+  logos: logosIcons,
+  devicon: deviconIcons,
+  "vscode-icons": vscodeIconsIcons,
 }
 
 const localIcons = import.meta.glob("../assets/icons/*.svg", {
