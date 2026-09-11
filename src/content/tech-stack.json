@@ -1,50 +1,29 @@
 {
-  "description": "Languages, frameworks, and infrastructure from my work.",
-  "groups": [
+  "categories": [
     {
-      "name": "Languages",
+      "title": "Languages",
       "icon": "mingcute:code-line",
-      "items": ["Python", "TypeScript", "JavaScript", "SQL", "Bash", "R"]
+      "items": ["Python", "SQL", "R", "LaTeX", "Markdown"]
     },
     {
-      "name": "AI & ML",
-      "icon": "mingcute:ai-line",
-      "items": [
-        "LLM",
-        "prompt engineering",
-        "evaluation",
-        "agents",
-        "RAG",
-        "Fine-tuning",
-        "PyTorch",
-        "Hugging Face ecosystem",
-        "Unsloth",
-        "Inspect AI"
-      ]
-    },
-    {
-      "name": "Backend & Data",
+      "title": "Data Engineering & Databases",
       "icon": "mingcute:server-line",
-      "items": [
-        "FastAPI",
-        "Flask",
-        "Express.js",
-        "REST APIs",
-        "PostgreSQL",
-        "SQLite",
-        "ClickHouse",
-        "Prisma"
-      ]
+      "items": ["PostgreSQL", "MySQL", "SQLite", "ETL Pipelines", "Web Scraping", "REST APIs"]
     },
     {
-      "name": "Frontend & Product",
-      "icon": "mingcute:layout-line",
-      "items": ["React", "Astro", "Next.js", "Tailwind CSS", "shadcn/ui"]
+      "title": "Data Analysis & Processing",
+      "icon": "mingcute:filter-line",
+      "items": ["Pandas", "NumPy", "SciPy", "Data Cleaning", "Geospatial Analysis"]
     },
     {
-      "name": "DevOps",
-      "icon": "mingcute:terminal-box-line",
-      "items": ["Git", "Docker", "CI/CD", "Vercel", "Railway"]
+      "title": "Data Visualization & BI",
+      "icon": "mingcute:chart-bar-line",
+      "items": ["Power BI", "Tableau", "Apache Superset", "Metabase", "Streamlit", "Plotly"]
+    },
+    {
+      "title": "AI & Tools",
+      "icon": "mingcute:brain-line",
+      "items": ["Prompt Engineering", "AI Project Management", "Git", "Ubuntu", "DBeaver"]
     }
   ]
 }
