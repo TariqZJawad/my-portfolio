@@ -3,13 +3,7 @@
     {
       "title": "Languages",
       "icon": "mingcute:code-line",
-      "items": [
-        "Python",
-        "SQL",
-        "R",
-        "LaTeX",
-        "Markdown"
-      ]
+      "items": ["Python", "SQL", "R", "LaTeX", "Markdown"]
     },
     {
       "title": "Data Engineering & Databases",
