@@ -75,42 +75,22 @@ const usesDescription =
     <TechStack {...techStack} />
   </Section>
 
-  <!-- 3. Workstation & Cloud Platforms -->
+  <!-- 3. Languages -->
   <ToolSection
-    title="Workstation & Cloud Platforms"
-    tools={[
-      {
-        name: "Ubuntu",
-        description: "Operating System",
-        href: "https://ubuntu.com/",
-        icon: "mingcute:code-line",
-        tags: [ToolTag.OpenSource],
-      },
-      {
-        name: "AWS",
-        description: "Cloud Computing",
-        href: "https://aws.amazon.com/",
-        icon: "mingcute:code-line",
-      },
-      {
-        name: "Azure",
-        description: "Cloud Platform",
-        href: "https://azure.microsoft.com/",
-        icon: "mingcute:code-line",
-      },
-    ]}
-  />
-
-  <!-- 4. Languages & Development -->
-  <ToolSection
-    title="Languages & Development"
+    title="Languages"
     tools={[
       {
         name: "Python",
-        description: "Programming Language",
+        description: "Core Programming Language",
         href: "https://www.python.org/",
         icon: "mingcute:code-line",
         tags: [ToolTag.OpenSource, ToolTag.Favorite],
+      },
+      {
+        name: "SQL",
+        description: "Database Query Language",
+        href: "#",
+        icon: "mingcute:code-line",
       },
       {
         name: "R",
@@ -120,62 +100,134 @@ const usesDescription =
         tags: [ToolTag.OpenSource],
       },
       {
-        name: "VS Code",
-        description: "IDE",
-        href: "https://code.visualstudio.com/",
-        icon: "mingcute:code-line",
-        tags: [ToolTag.Free, ToolTag.Favorite],
-      },
-      {
-        name: "Jupyter Notebook",
-        description: "Interactive Computing",
-        href: "https://jupyter.org/",
-        icon: "mingcute:code-line",
-        tags: [ToolTag.OpenSource],
-      },
-    ]}
-  />
-
-  <!-- 5. Data Engineering & Databases -->
-  <ToolSection
-    title="Data Engineering & Databases"
-    tools={[
-      {
-        name: "Databricks",
-        description: "Unified Data Analytics",
-        href: "https://databricks.com/",
+        name: "LaTeX",
+        description: "Document Preparation",
+        href: "https://www.latex-project.org/",
         icon: "mingcute:code-line",
       },
       {
-        name: "Openquery",
-        description: "Database Querying",
+        name: "Markdown",
+        description: "Markup Language",
         href: "#",
         icon: "mingcute:code-line",
       },
     ]}
   />
 
-  <!-- 6. Business Intelligence & Visualization -->
+  <!-- 4. Data Engineering & Databases -->
   <ToolSection
-    title="Business Intelligence & Visualization"
+    title="Data Engineering & Databases"
+    tools={[
+      {
+        name: "PostgreSQL",
+        description: "Relational Database",
+        href: "https://www.postgresql.org/",
+        icon: "mingcute:code-line",
+        tags: [ToolTag.OpenSource, ToolTag.Favorite],
+      },
+      {
+        name: "MySQL",
+        description: "Relational Database",
+        href: "https://www.mysql.com/",
+        icon: "mingcute:code-line",
+      },
+      {
+        name: "SQLite",
+        description: "Embedded Database",
+        href: "https://www.sqlite.org/",
+        icon: "mingcute:code-line",
+      },
+      {
+        name: "ETL & Data Pipelines",
+        description: "Data Integration workflows",
+        href: "#",
+        icon: "mingcute:code-line",
+      },
+      {
+        name: "Web Scraping",
+        description: "Automated Data Extractors",
+        href: "#",
+        icon: "mingcute:code-line",
+      },
+      {
+        name: "BeautifulSoup",
+        description: "HTML Parsing Library",
+        href: "https://www.crummy.com/software/BeautifulSoup/",
+        icon: "mingcute:code-line",
+      },
+      {
+        name: "REST APIs",
+        description: "Application Programming Interfaces",
+        href: "#",
+        icon: "mingcute:code-line",
+      },
+      {
+        name: "JSON & XML",
+        description: "Data Formats",
+        href: "#",
+        icon: "mingcute:code-line",
+      },
+    ]}
+  />
+
+  <!-- 5. Data Analysis & Processing -->
+  <ToolSection
+    title="Data Analysis & Processing"
+    tools={[
+      {
+        name: "Pandas",
+        description: "Data Manipulation Library",
+        href: "https://pandas.pydata.org/",
+        icon: "mingcute:code-line",
+        tags: [ToolTag.OpenSource, ToolTag.Favorite],
+      },
+      {
+        name: "NumPy",
+        description: "Numerical Computing",
+        href: "https://numpy.org/",
+        icon: "mingcute:code-line",
+      },
+      {
+        name: "SciPy",
+        description: "Scientific Computing",
+        href: "https://scipy.org/",
+        icon: "mingcute:code-line",
+      },
+      {
+        name: "Data Cleaning",
+        description: "Data Wrangling & Processing",
+        href: "#",
+        icon: "mingcute:code-line",
+      },
+      {
+        name: "Spreadsheets",
+        description: "Excel & Google Sheets",
+        href: "#",
+        icon: "mingcute:code-line",
+      },
+      {
+        name: "Geospatial Analysis",
+        description: "Spatial Data & Mapping",
+        href: "#",
+        icon: "mingcute:code-line",
+      },
+    ]}
+  />
+
+  <!-- 6. Data Visualization & BI -->
+  <ToolSection
+    title="Data Visualization & BI"
     tools={[
       {
         name: "Apache Superset",
-        description: "Data Exploration",
+        description: "Data Exploration Platform",
         href: "https://superset.apache.org/",
         icon: "mingcute:code-line",
         tags: [ToolTag.OpenSource, ToolTag.Favorite],
       },
       {
-        name: "Metabase",
-        description: "Business Intelligence",
-        href: "https://www.metabase.com/",
-        icon: "mingcute:code-line",
-        tags: [ToolTag.OpenSource],
-      },
-      {
         name: "Power BI",
-        description: "Interactive Visualization",
+        description: "Business Intelligence",
         href: "https://powerbi.microsoft.com/",
         icon: "mingcute:code-line",
       },
@@ -185,45 +237,99 @@ const usesDescription =
         href: "https://www.tableau.com/",
         icon: "mingcute:code-line",
       },
+      {
+        name: "Metabase",
+        description: "Business Intelligence",
+        href: "https://www.metabase.com/",
+        icon: "mingcute:code-line",
+      },
+      {
+        name: "Streamlit",
+        description: "Data Web Apps",
+        href: "https://streamlit.io/",
+        icon: "mingcute:code-line",
+      },
+      {
+        name: "Plotly",
+        description: "Interactive Charts",
+        href: "https://plotly.com/",
+        icon: "mingcute:code-line",
+      },
+      {
+        name: "Matplotlib & Seaborn",
+        description: "Static Data Plotting",
+        href: "#",
+        icon: "mingcute:code-line",
+      },
+      {
+        name: "Presentations",
+        description: "Data Storytelling",
+        href: "#",
+        icon: "mingcute:code-line",
+      },
     ]}
   />
 
-  <!-- 7. AI, Research & Productivity -->
+  <!-- 7. AI & ML -->
   <ToolSection
-    title="AI, Research & Productivity"
+    title="AI & ML"
     tools={[
       {
-        name: "Gemini",
-        description: "AI Assistant",
-        href: "https://gemini.google.com/",
+        name: "Artificial Intelligence",
+        description: "AI Concepts & Implementations",
+        href: "#",
         icon: "mingcute:code-line",
       },
       {
-        name: "Kaggle",
-        description: "Data Science Community",
-        href: "https://www.kaggle.com/",
-        icon: "mingcute:code-line",
-        tags: [ToolTag.Free],
-      },
-      {
-        name: "Excel",
-        description: "Spreadsheet",
-        href: "https://www.microsoft.com/excel",
+        name: "Prompt Engineering",
+        description: "LLM Interaction Optimization",
+        href: "#",
         icon: "mingcute:code-line",
       },
       {
-        name: "Google Sheets",
-        description: "Online Spreadsheet",
-        href: "https://sheets.google.com/",
+        name: "AI Project Management",
+        description: "Managing AI-driven workflows",
+        href: "#",
         icon: "mingcute:code-line",
-        tags: [ToolTag.Free],
       },
       {
-        name: "Google Slides",
-        description: "Presentations",
-        href: "https://slides.google.com/",
+        name: "Local LLMs",
+        description: "Ollama, GPT4All",
+        href: "#",
         icon: "mingcute:code-line",
-        tags: [ToolTag.Free],
+        tags: [ToolTag.OpenSource],
+      },
+    ]}
+  />
+
+  <!-- 8. Tools & Infrastructure -->
+  <ToolSection
+    title="Tools & Infrastructure"
+    tools={[
+      {
+        name: "Ubuntu",
+        description: "Linux Operating System",
+        href: "https://ubuntu.com/",
+        icon: "mingcute:code-line",
+        tags: [ToolTag.OpenSource],
+      },
+      {
+        name: "Git & GitHub",
+        description: "Version Control",
+        href: "https://github.com/",
+        icon: "mingcute:code-line",
+      },
+      {
+        name: "DBeaver",
+        description: "Universal Database Tool",
+        href: "https://dbeaver.io/",
+        icon: "mingcute:code-line",
+      },
+      {
+        name: "Astro",
+        description: "Web Framework",
+        href: "https://astro.build/",
+        icon: "mingcute:code-line",
       },
     ]}
   />
