@@ -1,5 +1,6 @@
 {
-  "categories": [
+  "description": "Languages, frameworks, and infrastructure from my work.",
+  "groups": [
     {
       "title": "Languages",
       "icon": "mingcute:code-line",
