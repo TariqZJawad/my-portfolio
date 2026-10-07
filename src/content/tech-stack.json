@@ -4,7 +4,7 @@
     {
       "name": "Languages",
       "icon": "mingcute:code-line",
-      "items": ["Python", "SQL", "R", "LaTeX", "Markdown"]
+      "items": ["Python", "SQL", "R", "Shell Scripting", "LaTeX", "Markdown"]
     },
     {
       "name": "Data Engineering & Databases",
@@ -13,7 +13,13 @@
         "PostgreSQL",
         "MySQL",
         "SQLite",
-        "ETL Pipelines",
+        "ETL / ELT",
+        "EDW",
+        "Data Modeling",
+        "Star / Snowflake Schema",
+        "Big Data",
+        "DBA",
+        "Data Governance",
         "Web Scraping",
         "REST APIs"
       ]
@@ -26,6 +32,7 @@
         "NumPy",
         "SciPy",
         "Data Cleaning",
+        "Data Anonymization",
         "Geospatial Analysis"
       ]
     },
@@ -45,6 +52,8 @@
       "name": "AI & Tools",
       "icon": "mingcute:brain-line",
       "items": [
+        "Generative AI",
+        "ML for Big Data",
         "Prompt Engineering",
         "AI Project Management",
         "Git",
