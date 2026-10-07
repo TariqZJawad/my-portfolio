@@ -111,6 +111,26 @@ const usesDescription =
         href: "https://azure.microsoft.com/",
         icon: "logos:microsoft-azure",
       },
+      {
+        name: "IBM Cloud",
+        description: "Cloud Platform",
+        href: "https://cloud.ibm.com/",
+        icon: "logos:ibm",
+      },
+      {
+        name: "Docker",
+        description: "Containerization",
+        href: "https://www.docker.com/",
+        icon: "logos:docker-icon",
+        tags: [ToolTag.OpenSource],
+      },
+      {
+        name: "Kubernetes",
+        description: "Container Orchestration",
+        href: "https://kubernetes.io/",
+        icon: "logos:kubernetes",
+        tags: [ToolTag.OpenSource],
+      },
     ]}
   />
 
@@ -130,6 +150,13 @@ const usesDescription =
         description: "Statistical Computing",
         href: "https://www.r-project.org/",
         icon: "devicon:r",
+        tags: [ToolTag.OpenSource],
+      },
+      {
+        name: "Bash / Linux CLI",
+        description: "Shell Scripting",
+        href: "https://www.gnu.org/software/bash/",
+        icon: "logos:bash-icon",
         tags: [ToolTag.OpenSource],
       },
       {
@@ -153,6 +180,45 @@ const usesDescription =
   <ToolSection
     title="Data Engineering & Databases"
     tools={[
+      {
+        name: "Apache Spark",
+        description: "Distributed Data Processing",
+        href: "https://spark.apache.org/",
+        icon: "logos:apache-spark",
+        tags: [ToolTag.OpenSource],
+      },
+      {
+        name: "Apache Airflow",
+        description: "Workflow Orchestration",
+        href: "https://airflow.apache.org/",
+        icon: "airflow",
+        tags: [ToolTag.OpenSource],
+      },
+      {
+        name: "Apache Kafka",
+        description: "Event Streaming",
+        href: "https://kafka.apache.org/",
+        icon: "kafka",
+        tags: [ToolTag.OpenSource],
+      },
+      {
+        name: "MongoDB",
+        description: "NoSQL Database",
+        href: "https://www.mongodb.com/",
+        icon: "logos:mongodb-icon",
+      },
+      {
+        name: "Cassandra",
+        description: "Wide-Column Store",
+        href: "https://cassandra.apache.org/",
+        icon: "logos:cassandra",
+      },
+      {
+        name: "IBM Db2",
+        description: "Relational Database",
+        href: "https://www.ibm.com/products/db2",
+        icon: "logos:ibm",
+      },
       {
         name: "Databricks",
         description: "Unified Data Analytics",
@@ -178,6 +244,18 @@ const usesDescription =
         href: "https://superset.apache.org/",
         icon: "logos:apache-superset-icon",
         tags: [ToolTag.OpenSource, ToolTag.Favorite],
+      },
+      {
+        name: "Looker Studio",
+        description: "Google Data Visualization",
+        href: "https://lookerstudio.google.com/",
+        icon: "logos:google-data-studio",
+      },
+      {
+        name: "IBM Cognos",
+        description: "Enterprise Analytics",
+        href: "https://www.ibm.com/products/cognos-analytics",
+        icon: "logos:ibm",
       },
       {
         name: "Metabase",
@@ -210,6 +288,13 @@ const usesDescription =
         description: "AI Assistant",
         href: "https://gemini.google.com/",
         icon: "logos:google-gemini-icon",
+      },
+      {
+        name: "Google Colab",
+        description: "Cloud Notebook",
+        href: "https://colab.research.google.com/",
+        icon: "logos:google-icon",
+        tags: [ToolTag.Free],
       },
       {
         name: "Kaggle",
@@ -283,4 +368,4 @@ const usesDescription =
     gap: var(--space-3xs);
     margin-block-start: auto;
   }
-</style>​ 
+</style>
