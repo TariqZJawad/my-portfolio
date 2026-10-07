@@ -4,7 +4,6 @@ description: "An end-to-end Big Data ETL and Machine Learning pipeline using PyS
 fromDate: 2026-08
 toDate: 2026-09
 types:
-  - machine-learning
   - data-engineering
   - case-study
 skills:
