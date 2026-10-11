@@ -66,3 +66,13 @@ To make the engine viable for real university environments, I implemented advanc
 * **Burnout Constraints:** I added a hard daily limit on instructor lectures and strictly prevented any student group from taking the same subject twice in one day.
 
 A major takeaway from this project is that software engineering isn't just about syntax or importing libraries. The real challenge lies in abstracting reality, mimicking human logic intelligently, rejecting unwarranted complexity, and building a solid architecture that solves the problem in the smartest, most efficient way possible.
+---
+
+### Explore the Code
+
+If you are interested in diving deeper into the technical details, examining the data structures, or running the scheduler yourself, you can explore the complete source code on GitHub.
+
+:::note[View the Source]
+Check out the full implementation and the structured data models in the [Engineering Timetable Scheduling Algorithm Repository](https://github.com/TariqZJawad/Engineering-Timetable-Scheduleing-algorithm/blob/main/README.md).
+:::
+ 
