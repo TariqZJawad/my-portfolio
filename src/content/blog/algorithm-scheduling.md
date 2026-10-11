@@ -2,7 +2,8 @@
 title: Engineering a Timetable Scheduling Algorithm from Scratch
 description: How I tackled the classic NP-Hard Class Scheduling Problem by rejecting ready-made algorithms and relying on human logic and architectural design.
 createdAt: 2026-10-11T18:00:00
-image: ./assets/algorithm-scheduling.png
+image: ./assets/astro-scholar-release.png
+
 tags:
   - algorithm
   - python
